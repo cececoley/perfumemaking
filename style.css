@@ -1,0 +1,210 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background: #001e4d;
+}
+
+/* Hero section styles */
+.hero-section {
+    height: 50vh;
+background-image: linear-gradient(rgba(9,0,77,0.65), rgba(9,0,77,0.65)), url(hero-bg.jpg);
+
+    /*background: url(hero3-bg.jpg);*/
+    background-position: center;
+
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    padding: 0 20px;
+}
+
+.hero-section .hero-content {
+    color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.hero-section .hero-content h1 {
+    font-size: 50px;
+    max-width: 600px;
+}
+
+.hero-section .hero-content p {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.hero-section .hero-content button {
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero-section .hero-content button:hover {
+    color: #fff;
+    background: #c06b3e;
+}
+
+/* Lesson section styles */
+.container {
+    width: 400px;
+    height: 225px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.accordion {
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+.accordion li {
+    list-style: none;
+    width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: #e3edf7;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Hide the text initially */
+.accordion .content {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+/* Show content when checked */
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 10px 10px 20px;
+}
+
+/* Change label content when checked */
+.accordion input[type="radio"]:checked + label::before {
+    content: '-';
+}
+
+
+
+/* Interactive quiz styles */
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.quiz {
+    padding: 10px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #222;
+    font-weight: 600;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
+
+
+.footer { 
+    
+    bottom: 0; 
+    color: #fff;
+    align-content: center;
+}
